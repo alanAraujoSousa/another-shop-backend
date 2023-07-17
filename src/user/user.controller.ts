@@ -13,6 +13,6 @@ export class UserController {
 
   @Get()
   async getAllUsers() {
-    return JSON.stringify({ test: 'abc' });
+    return this.userService.getAllUsers();
   }
 }
